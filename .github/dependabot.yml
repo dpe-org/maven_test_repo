@@ -4,7 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    severity: high
+  severity: high
     #target-branch: "dependabot"  # Replace with your desired branch name
   #  reviewers:
    #   - "ismail0352"
