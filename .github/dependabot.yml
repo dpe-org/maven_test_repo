@@ -1,19 +1,11 @@
 version: 2
 updates:
-  - package-ecosystem: "gomod, npm, pip, maven"
+  - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
-      target-branch: "dependabot"  # Replace with your desired branch name
-    reviewers:
-      - "users of Orion depending upon the repo"
+    #target-branch: "dependabot"  # Replace with your desired branch name
+  #  reviewers:
+   #   - "ismail0352"
     allow:
-      - security-strict: "high"  # Set the desired minimum severity level
-    update_configs:
-      - package-regex: ".*"
-        labels:
-          - "regular"
-      - package-regex: ".*"
-        update_type: "security"
-        labels:
-          - "security"
+      - dependency-type: "all"
