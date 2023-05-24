@@ -6,6 +6,5 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "all"
-    metadata:
-      - key: "severity"
-        value: "high"
+    labels:
+      - "python"
